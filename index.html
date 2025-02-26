@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Time Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="start">
+        <img src="images/Group 4.png" alt="inro-img" />
+        <button id="start-now" class="btn">
+          <span class="start-now-text">Start Now</span>
+          <span class="entity">&gt;&gt;&gt;</span>
+        </button>
+        <h4></h4>
+        <p>Made with ❤️ by Harpreet Singh</p>
+      </section>
+      <section class="part-2 disable">
+        <audio id="audioElement" loop>
+          <source src="./audio/tik-tik.mp3" type="audio/mp3" />
+        </audio>
+        <div class="part-2-header-container">
+          <div class="quiz-imgage-container">
+            <img src="images/Group 4.png" alt="inro-img" />
+          </div>
+          <div class="sound-imgage-container">
+            <img src="images/🦆 icon _Volume Up_.png" alt="inro-img" />
+          </div>
+        </div>
+        <div class="slide-count-container">
+          <span id="count-slide">01</span>
+          <span>/33</span>
+        </div>
+        <h3 class="question">
+          Inside which HTML element do we put the JavaScript?
+        </h3>
+        <div class="countTImer">
+          <span>00:</span>
+          <span>30</span>
+        </div>
+        <div class="option-container">
+          <div class="event">
+            <div class="options"></div>
+            <div class="options"></div>
+            <div class="options"></div>
+            <div class="options"></div>
+          </div>
+        </div>
+        <button id="next" class="next">Next</button>
+        <button id="show-result" class="next display">Show Result</button>
+        <p class="madeby">Made with ❤️ by Harpreet Singh</p>
+      </section>
+      <section class="pop-up display">
+        <div class="time-up-card">
+          <h2>Time Up</h2>
+          <img src="./images/alarm.png" alt="" />
+          <button id="retry" class="btn">Retry</button>
+        </div>
+      </section>
+      <section class="final display">
+        <div>
+          <img src="images/Group 4.png" alt="inro-img" />
+          <p>Result</p>
+        </div>
+        <div id="second">
+          <div>
+            <div id="graph"></div>
+          </div>
+          <h4><span id="user-right-ans">2</span><span>/3</span></h4>
+        </div>
+        <div>
+          <h4>“Keep learning, you have a good score!”</h4>
+          <button id="retryFinal" class="btn">Retry</button>
+        </div>
+
+        <p>Made with ❤️ by Harpreet Singh</p>
+      </section>
+    </div>
+  </body>
+</html>
